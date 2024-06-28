@@ -18,7 +18,7 @@ const CounterPage = () => {
   };
 
   return (
-    <div className="w-10/12 h-96 mx-auto my-36">
+    <div className="h-96 my-36">
       <div className="w-full h-full bg-gray-300 rounded-lg">
         <div className="">
           <h1 className="text-center pt-10 font-bold ">Simple counter app</h1>
