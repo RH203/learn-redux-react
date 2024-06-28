@@ -1,14 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Provider } from "react-redux";
+import {Provider} from "react-redux";
+import {RouterProvider} from "react-router-dom";
 import "./index.css";
-import CounterPage from "./pages/CounterPage";
-import { store } from "./redux/store/store";
+import {store} from "./redux/store/store";
+
+import {router} from "./router/router.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>
-      <CounterPage />
+      <RouterProvider router={router}/>
     </Provider>
   </React.StrictMode>,
 );
